@@ -1,0 +1,57 @@
+body {
+    background: url(img/Bankoboev.Ru_makro_foto_yagody.jpg) no-repeat;
+    background-size: cover;
+}
+
+body form {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+body form i {
+    padding-right: 5px;
+}
+
+body form .form_tell .form-control {
+    padding: 5px;
+}
+
+body form .form_tell label {
+    width: 100%;
+}
+
+body form .form_tell input {
+    width: calc(100% - 100px);
+}
+
+body form .form_tell select {
+    width: 99px;
+}
+
+body form #login.ng-invalid {
+    background-color: #FA787E;
+}
+
+body form #login.ng-valid {
+    background-color: #78FA89;
+}
+body form #email.ng-invalid {
+    background-color: #FA787E;
+}
+
+body form #email.ng-valid {
+    background-color: #78FA89;
+}
+body form #passwords .ng-valid{
+    background-color: #78FA89;
+}
+body form #passwords .ng-invalid{
+    background-color: #FA787E;
+}
+body form #tell.ng-valid {
+    background-color: #78FA89;
+}
+body form #tell.ng-invalid {
+    background-color: #FA787E;
+}

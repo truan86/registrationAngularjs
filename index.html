@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="formApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular/angular.min.js"></script>
+    <script src="myjs.js"></script>
+</head>
+<body ng-controller="FormCntr">
+<div class="container">
+    <div class="row">
+        <form class="col-lg-offset-3  col-lg-6" name="myForm">
+            <div class="form-group ">
+                <label><i class="fa fa-user"></i>Login</label>
+                <input id="login" name="loginName" ng-model="login" ng-pattern="loginPattern" type="text"
+                       class="form-control" required placeholder="login">
+
+                <p>The string must contain from 3 to 15 characters</p>
+            </div>
+            <div class="form-group">
+                <label for="email1"><i class="fa fa-envelope"></i>Email</label>
+                <input id="email" ng-model="email" ng-pattern="emailPattern" type="email" class="form-control"
+                       id="email1" required placeholder="email">
+            </div>
+
+            <div id="passwords" class="form-group">
+                <label for="password1"><i class="fa fa-key"></i>Password</label>
+                <input name="passwordName" type="password" ng-model="password1" ng-pattern="passwordPattern"
+                       class="form-control"
+                       id="password1"
+                       placeholder="Password" required>
+
+                <p>The string must contain 1 lowercase 1 uppercase 1 numeric must be 8 or longer</p>
+            </div>
+
+            <div class="form-group  form_tell">
+                <label for="tell"><i class="fa fa-mobile"></i>Phone</label>
+                <input id="tell" type="tell" ng-model="tell" class="form-control pull-right" id="tell"
+                       ng-pattern="tellPattern" placeholder="Number" required>
+                <select class="form-control">
+                    <option>+38(093)</option>
+                    <option>+38(060)</option>
+                    <option>+38(066)</option>
+                    <option>+38(097)</option>
+                    <option>+38(073)</option>
+                </select>
+
+                <p>input format 555-55-55</p>
+            </div>
+            <button type="submit" class="btn btn-default pull-right" ng-disabled="myForm.$invalid">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
