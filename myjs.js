@@ -7,4 +7,5 @@ formApp.controller('FormCntr', function ($scope) {
     $scope.emailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
     $scope.passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.{8,})/;
     $scope.tellPattern = /^\d{3}-\d{2}-\d{2}$/;
+
 });

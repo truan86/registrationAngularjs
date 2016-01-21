@@ -55,3 +55,9 @@ body form #tell.ng-valid {
 body form #tell.ng-invalid {
     background-color: #FA787E;
 }
+body form #repeatPassword .ng-valid{
+    background-color: #78FA89;
+}
+body form #repeatPassword .ng-invalid{
+    background-color: #FA787E;
+}
